@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmiTest.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+122409a44d62e8e89d5baf5a90cb7aeed8906e3b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02a3a87fdc22fa511e3301f4c6da2c2d5f454ce8")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmiTest.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmiTest.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,11 +1,30 @@
 {
   "version": 4,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "EmiTest.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/EmiTest.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmiTest.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "EmiTest.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EmiTest.Domain/EmiTest.Domain.csproj",
+      "msbuildProject": "../EmiTest.Domain/EmiTest.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "EmiTest.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\USUARIO\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
         "net8.0": {
           "framework": "net8.0",
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Prueba Tecnica Emi\\TestEmi\\EmiTest.Domain\\EmiTest.Domain.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Prueba Tecnica Emi\\TestEmi\\EmiTest.Domain\\EmiTest.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

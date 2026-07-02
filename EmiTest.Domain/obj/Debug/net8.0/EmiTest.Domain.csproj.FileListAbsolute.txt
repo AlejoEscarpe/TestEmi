@@ -1,0 +1,12 @@
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\bin\Debug\net8.0\EmiTest.Domain.deps.json
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\bin\Debug\net8.0\EmiTest.Domain.dll
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\bin\Debug\net8.0\EmiTest.Domain.pdb
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\obj\Debug\net8.0\EmiTest.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\obj\Debug\net8.0\EmiTest.Domain.AssemblyInfoInputs.cache
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\obj\Debug\net8.0\EmiTest.Domain.AssemblyInfo.cs
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\obj\Debug\net8.0\EmiTest.Domain.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\obj\Debug\net8.0\EmiTest.Domain.sourcelink.json
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\obj\Debug\net8.0\EmiTest.Domain.dll
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\obj\Debug\net8.0\refint\EmiTest.Domain.dll
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\obj\Debug\net8.0\EmiTest.Domain.pdb
+C:\Users\USUARIO\OneDrive\Escritorio\Prueba Tecnica Emi\TestEmi\EmiTest.Domain\obj\Debug\net8.0\ref\EmiTest.Domain.dll

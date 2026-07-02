@@ -10,4 +10,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmiTest.Application\EmiTest.Application.csproj" />
+    <ProjectReference Include="..\EmiTest.Infrastructure\EmiTest.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
