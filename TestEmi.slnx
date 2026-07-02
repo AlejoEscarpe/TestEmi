@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="EmiTest.API/EmiTest.API.csproj" />
+  <Project Path="EmiTest.Application/EmiTest.Application.csproj" />
+  <Project Path="EmiTest.Domain/EmiTest.Domain.csproj" />
+  <Project Path="EmiTest.Infrastructure/EmiTest.Infrastructure.csproj" />
+</Solution>
