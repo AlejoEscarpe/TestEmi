@@ -5,10 +5,10 @@ namespace EmiTest.Domain.Entities
 {
     public class Employee
     {
-        public int Id { get; set; } // [cite: 12]
-        public string Name { get; set; } = string.Empty; // [cite: 13]
-        public PositionType CurrentPosition { get; set; } // [cite: 14]
-        public decimal Salary { get; set; } // [cite: 16]
+        public int Id { get; set; } 
+        public string Name { get; set; } = string.Empty; 
+        public PositionType CurrentPosition { get; set; } 
+        public decimal Salary { get; set; } 
 
         public int DepartmentId { get; set; }
         public Department? Department { get; set; }

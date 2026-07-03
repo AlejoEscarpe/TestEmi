@@ -9,6 +9,6 @@ namespace EmiTest.Application.Strategies
 {
     public class ManagerBonusStrategy : IBonusStrategy
     {
-        public decimal Calculate(decimal salary) => salary * 0.20m; // 20% [cite: 19]
+        public decimal Calculate(decimal salary) => salary * 0.20m; // 20% 
     }
 }

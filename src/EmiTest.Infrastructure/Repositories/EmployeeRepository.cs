@@ -22,14 +22,12 @@ namespace EmiTest.Infrastructure.Repositories
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
 
-        // SECCIÓN 4.3: Query LINQ optimizada usando EF Core
-        // Trae todos los empleados de un departamento específico que tengan al menos un proyecto asignado
         public async Task<IEnumerable<Employee>> GetEmployeesByDepartmentAndProjectsAsync(int departmentId)
         {
             return await _context.Employees
                 .Include(e => e.Department)
                 .Include(e => e.Projects)
-                .Where(e => e.DepartmentId == departmentId && e.Projects.Any()) // Clausula "Any" garantiza "al menos un proyecto"
+                .Where(e => e.DepartmentId == departmentId && e.Projects.Any()) 
                 .ToListAsync();
         }
     }

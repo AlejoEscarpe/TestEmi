@@ -24,19 +24,19 @@ namespace EmiTest.API.Controllers
         [HttpPost("register")]
         public IActionResult Register([FromBody] RegisterDto dto)
         {
-            // Simulación de registro exitoso para propósitos de la prueba técnica (Sección 3.1)
+            // Simulación de registro exitoso para propósitos de la prueba técnica 
             return Ok(new { Message = $"User {dto.Username} registered successfully with role {dto.Role}." });
         }
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginDto dto)
         {
-            // Simulación de validación de credenciales y asignación de roles (Sección 3.2)
+            // Simulación de validación de credenciales y asignación de roles 
             string role = "User";
 
             if (dto.Username.ToLower() == "admin")
             {
-                role = "Admin"; // Asigna Rol Admin si el usuario ingresado es admin (Sección 3.2)
+                role = "Admin"; // Asigna Rol Admin si el usuario ingresado es admin 
             }
 
             // Generación del Token JWT
@@ -55,7 +55,7 @@ namespace EmiTest.API.Controllers
                 Subject = new ClaimsIdentity(new[]
                 {
                     new Claim(ClaimTypes.Name, username),
-                    new Claim(ClaimTypes.Role, role) // Inyección del Rol en el token (Sección 3.2)
+                    new Claim(ClaimTypes.Role, role) // Inyección del Rol en el token 
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(jwtSettings.GetValue<int>("DurationInMinutes")),
                 Issuer = jwtSettings["Issuer"],

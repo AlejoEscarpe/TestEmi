@@ -20,7 +20,7 @@ namespace EmiTest.API.Middleware
 
         public async Task InvokeAsync(HttpContext context)
         {
-            // 1. Capturar detalles de la petición entrante (Sección 2.3)
+            
             context.Request.EnableBuffering(); // Permite leer el Body múltiples veces sin consumirlo por completo
 
             var requestTime = DateTime.UtcNow;
@@ -44,7 +44,7 @@ namespace EmiTest.API.Middleware
                                    "Body: {Body}",
                                    requestTime, method, path, queryString, string.IsNullOrEmpty(bodyAsText) ? "(Empty)" : bodyAsText);
 
-            // 2. Invocar al siguiente middleware en el pipeline
+            // Invocar al siguiente middleware en el pipeline
             await _next(context);
         }
     }

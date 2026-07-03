@@ -1,6 +1,11 @@
 <Solution>
-  <Project Path="EmiTest.API/EmiTest.API.csproj" />
-  <Project Path="EmiTest.Application/EmiTest.Application.csproj" />
-  <Project Path="EmiTest.Domain/EmiTest.Domain.csproj" />
-  <Project Path="EmiTest.Infrastructure/EmiTest.Infrastructure.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/EmiTest.API/EmiTest.API.csproj" />
+    <Project Path="src/EmiTest.Application/EmiTest.Application.csproj" />
+    <Project Path="src/EmiTest.Domain/EmiTest.Domain.csproj" />
+    <Project Path="src/EmiTest.Infrastructure/EmiTest.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EmiTest.Tests/EmiTest.Tests.csproj" />
+  </Folder>
 </Solution>

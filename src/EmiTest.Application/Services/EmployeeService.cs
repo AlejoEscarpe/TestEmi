@@ -45,7 +45,7 @@ namespace EmiTest.Application.Services
                 DepartmentId = dto.DepartmentId
             };
 
-            // Añadimos el registro inicial al historial de posiciones (Sección 1)
+            // Añadimos el registro inicial al historial de posiciones
             employee.PositionHistories.Add(new PositionHistory
             {
                 Position = dto.CurrentPosition.ToString(),
@@ -64,7 +64,7 @@ namespace EmiTest.Application.Services
             var employee = await _employeeRepository.GetEmployeeWithHistoryAsync(id);
             if (employee == null) return false;
 
-            // Si la posición cambió, cerramos la anterior en el historial y abrimos una nueva (Sección 1)
+            // Si la posición cambió, cerramos la anterior en el historial y abrimos una nueva
             if (employee.CurrentPosition != dto.CurrentPosition)
             {
                 var currentHistory = employee.PositionHistories.FirstOrDefault(ph => ph.EndDate == null);
@@ -99,7 +99,7 @@ namespace EmiTest.Application.Services
             return await _employeeRepository.SaveChangesAsync();
         }
 
-        // Resolución de la query optimizada usando LINQ (Sección 4.3)
+        // Resolución de la query optimizada usando LINQ 
         public async Task<IEnumerable<EmployeeDto>> GetEmployeesByDepartmentAsync(int departmentId)
         {
             var employees = await _employeeRepository.GetEmployeesByDepartmentAndProjectsAsync(departmentId);
@@ -109,7 +109,7 @@ namespace EmiTest.Application.Services
         // Método privado helper para mapear Entidades a DTOs y calcular el Bono con el patrón Strategy
         private EmployeeDto MapToDto(Employee employee)
         {
-            // Resolvemos la estrategia usando nuestra Factory de forma dinámica (Sección 1)
+            // Resolvemos la estrategia usando nuestra Factory de forma dinámica 
             var strategy = _bonusStrategyFactory.GetStrategy(employee.CurrentPosition);
 
             return new EmployeeDto

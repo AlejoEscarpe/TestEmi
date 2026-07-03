@@ -29,7 +29,7 @@ namespace EmiTest.API
 
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            
             builder.Services.AddEndpointsApiExplorer();
 
 
@@ -41,7 +41,7 @@ namespace EmiTest.API
                     Version = "v1"
                 });
 
-                // 1. Definir el esquema de seguridad JWT
+                // Definir el esquema de seguridad JWT
                 options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
                 {
                     Name = "Authorization",
@@ -52,7 +52,7 @@ namespace EmiTest.API
                     Description = "Ingresa el token JWT usando el formato: Bearer {tu_token}"
                 });
 
-                // 2. Hacer que todos los endpoints requieran el token de forma global en la UI
+                // Hacer que todos los endpoints requieran el token de forma global en la UI
                 options.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
     {
         {
@@ -71,7 +71,7 @@ namespace EmiTest.API
 
 
 
-            // Configuración del servicio de Autenticación con JWT Bearer (Sección 3)
+            // Configuración del servicio de Autenticación con JWT Bearer
             var jwtSettings = builder.Configuration.GetSection("Jwt");
             var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]!);
 
@@ -99,7 +99,7 @@ namespace EmiTest.API
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

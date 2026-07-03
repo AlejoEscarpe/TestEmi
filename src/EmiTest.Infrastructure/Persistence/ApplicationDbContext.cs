@@ -18,27 +18,24 @@ namespace EmiTest.Infrastructure.Persistence
         {
             base.OnModelCreating(modelBuilder);
 
-            // 1. Configuración de Department (Uno a Muchos con Employee)
             modelBuilder.Entity<Department>(entity =>
             {
                 entity.HasKey(d => d.Id);
                 entity.Property(d => d.Name).IsRequired().HasMaxLength(100);
             });
 
-            // 2. Configuración de Project (Muchos a Muchos con Employee)
             modelBuilder.Entity<Project>(entity =>
             {
                 entity.HasKey(p => p.Id);
                 entity.Property(p => p.Name).IsRequired().HasMaxLength(100);
                 entity.Property(p => p.Description).HasMaxLength(500);
 
-                // Configura la tabla intermedia implícita o explícita para la relación de la Sección 4.1
+
                 entity.HasMany(p => p.Employees)
                       .WithMany(e => e.Projects)
                       .UsingEntity(j => j.ToTable("EmployeeProjects"));
             });
 
-            // 3. Configuración de PositionHistory (Uno a Muchos con Employee)
             modelBuilder.Entity<PositionHistory>(entity =>
             {
                 entity.HasKey(ph => ph.Id);
@@ -52,7 +49,7 @@ namespace EmiTest.Infrastructure.Persistence
                       .OnDelete(DeleteBehavior.Cascade);
             });
 
-            // 4. Configuración de Employee
+
             modelBuilder.Entity<Employee>(entity =>
             {
                 entity.HasKey(e => e.Id);
